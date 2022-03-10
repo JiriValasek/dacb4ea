@@ -1,0 +1,4 @@
+:py:mod:`DifferentialEvolution`
+===============================
+
+.. py:module:: DifferentialEvolution

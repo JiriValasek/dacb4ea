@@ -1,0 +1,28 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "[python]": {
+    "editor.defaultFormatter": null
+  },
+  "python.formatting.blackArgs": ["--line-length", "88"],
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["--max-line-length=88"],
+  "python.linting.mypyEnabled": true,
+  "python.linting.mypyCategorySeverity.note": "Warning",
+  "python.linting.mypyArgs": [
+    "--ignore-missing-imports",
+    "--follow-imports=silent",
+    "--show-column-numbers",
+    "--disallow-untyped-defs=True",
+    "--disallow-untyped-calls=True",
+    "--check-untyped-defs=True",
+    "--no-implicit-optional=True"
+  ],
+  "editor.formatOnSave": true,
+  "autoDocstring.docstringFormat": "sphinx",
+  //"mypy.runUsingActiveInterpreter": true
+  "mypy.dmypyExecutable": "${workspaceFolder}/.venv/Scripts/dmypy.exe"
+}

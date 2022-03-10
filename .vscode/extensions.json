@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "bungcip.better-toml",
+    "coenraads.bracket-pair-colorizer",
+    "docsmsft.docs-markdown",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "Gruntfuggly.todo-tree",
+    "kiteco.kite",
+    "matangover.mypy",
+    "ms-python.python",
+    "njpwerner.autodocstring"
+  ]
+}

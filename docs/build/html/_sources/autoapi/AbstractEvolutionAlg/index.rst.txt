@@ -1,0 +1,24 @@
+:py:mod:`AbstractEvolutionAlg`
+==============================
+
+.. py:module:: AbstractEvolutionAlg
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   AbstractEvolutionAlg.AbstractEvolutionAlg
+
+
+
+
+.. py:class:: AbstractEvolutionAlg(init_params)
+
+   Bases: :py:obj:`abc.ABC`
+
+   An abstract class to be inherited by evolutionary algorithms such as Differential Evolution, Swarm Particle Optimization etc.
