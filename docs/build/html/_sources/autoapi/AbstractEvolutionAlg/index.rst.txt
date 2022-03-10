@@ -21,4 +21,5 @@ Classes
 
    Bases: :py:obj:`abc.ABC`
 
-   An abstract class to be inherited by evolutionary algorithms such as Differential Evolution, Swarm Particle Optimization etc.
+   An abstract class to be inherited by evolutionary algorithms such as
+   Differential Evolution, Swarm Particle Optimization etc.

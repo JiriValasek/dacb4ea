@@ -1,5 +1,18 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.rulers": [
+    {
+      "column": 79,
+      "color": "#880"
+    },
+    {
+      "column": 88,
+      "color": "#DD0"
+    }
+  ],
+  "editor.tabSize": 4,
+  "editor.renderFinalNewline": true,
+  "editor.renderWhitespace": "all",
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
   "[python]": {
     "editor.defaultFormatter": null
@@ -16,13 +29,9 @@
     "--ignore-missing-imports",
     "--follow-imports=silent",
     "--show-column-numbers",
-    "--disallow-untyped-defs=True",
-    "--disallow-untyped-calls=True",
-    "--check-untyped-defs=True",
-    "--no-implicit-optional=True"
+    "--disallow-untyped-defs",
+    "--disallow-untyped-calls"
   ],
   "editor.formatOnSave": true,
-  "autoDocstring.docstringFormat": "sphinx",
-  //"mypy.runUsingActiveInterpreter": true
-  "mypy.dmypyExecutable": "${workspaceFolder}/.venv/Scripts/dmypy.exe"
+  "autoDocstring.docstringFormat": "sphinx"
 }
