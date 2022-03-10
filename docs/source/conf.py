@@ -13,26 +13,27 @@
 #
 import os
 import sys
+
 import sphinx_rtd_theme
 import toml
 
-sys.path.insert(0, os.path.join(os.path.abspath('../..'), 'dacb4ea'))
+sys.path.insert(0, os.path.join(os.path.abspath("../.."), "dacb4ea"))
 
 
 # Pull metadata from the pyproject.toml file
-metadata = toml.load(os.path.join(os.path.abspath('../..'), 'pyproject.toml'))['tool'][
-    'poetry'
+metadata = toml.load(os.path.join(os.path.abspath("../.."), "pyproject.toml"))["tool"][
+    "poetry"
 ]
 
 # -- Project information -----------------------------------------------------
 
-project = metadata['name']
-copyright = '2022, Jiri VALASEK'
-author = 'Jiri VALASEK'
+project = metadata["name"]
+copyright = "2022, Jiri VALASEK"
+author = "Jiri VALASEK"
 # root_doc = "dacb4ea"
 
 # The full version, including alpha/beta/rc tags
-release = metadata['version']
+release = metadata["version"]
 
 
 # -- General configuration ---------------------------------------------------
@@ -42,16 +43,16 @@ release = metadata['version']
 # ones.
 extensions = [
     # "sphinx.ext.intersphinx",
-    'sphinx.ext.todo',
-    'sphinx.ext.napoleon',
-    'sphinx.ext.mathjax',
-    'sphinx.ext.inheritance_diagram',
-    'sphinx.ext.graphviz',
-    'sphinx.ext.autosummary',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autodoc.typehints',
-    'sphinx_rtd_theme',
-    'autoapi.extension',
+    "sphinx.ext.todo",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.inheritance_diagram",
+    "sphinx.ext.graphviz",
+    "sphinx.ext.autosummary",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.autodoc.typehints",
+    "sphinx_rtd_theme",
+    "autoapi.extension",
 ]
 
 
@@ -69,20 +70,20 @@ napoleon_use_param = True
 napoleon_use_rtype = True
 
 # autodoc settings
-autodoc_member_order = 'bysource'
-autodoc_typehints = 'description'
+autodoc_member_order = "bysource"
+autodoc_typehints = "description"
 
 # auto-api settings
-autoapi_type = 'python'
-autoapi_dirs = [os.path.join(os.path.abspath('../..'), 'dacb4ea')]
-autoapi_template_dir = '_templates/autoapi'
+autoapi_type = "python"
+autoapi_dirs = [os.path.join(os.path.abspath("../.."), "dacb4ea")]
+autoapi_template_dir = "_templates/autoapi"
 autoapi_add_toctree_entry = True
 autoapi_generate_api_cos = True
-autoapi_root = 'autoapi'
-templates_path = ['_templates']
+autoapi_root = "autoapi"
+templates_path = ["_templates"]
 exclude_patterns = [
-    os.path.join(os.path.abspath('../..'), 'tests'),
-    os.path.join(os.path.abspath('../..'), 'examples'),
+    os.path.join(os.path.abspath("../.."), "tests"),
+    os.path.join(os.path.abspath("../.."), "examples"),
 ]
 add_function_parentheses = False
 add_module_names = False
@@ -95,33 +96,30 @@ todo_include_todos = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ["_static"]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    # 'analytics_id': 'G-XXXXXXXXXX',  #  Provided by Google in your dashboard
-    # 'analytics_anonymize_ip': False,
-    'logo_only': False,
-    'display_version': True,
-    'prev_next_buttons_location': 'bottom',
+    "logo_only": False,
+    "display_version": True,
+    "prev_next_buttons_location": "bottom",
     # 'style_external_links': False,
-    'vcs_pageview_mode': 'blob',
+    "vcs_pageview_mode": "blob",
     # 'style_nav_header_background': 'white',
     # Toc options
-    'collapse_navigation': True,
-    'sticky_navigation': True,
-    'navigation_depth': 4,
-    'includehidden': True,
-    'titles_only': False,
-    # 'github_url': ''
+    "collapse_navigation": True,
+    "sticky_navigation": True,
+    "navigation_depth": 4,
+    "includehidden": True,
+    "titles_only": False,
     # https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html
 }
 
